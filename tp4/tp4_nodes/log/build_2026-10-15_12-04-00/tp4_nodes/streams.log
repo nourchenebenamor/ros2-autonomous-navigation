@@ -1,0 +1,58 @@
+[0.523s] Invoking command in '/home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/wdir/install/tp3_nodes:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/wdir/tp4/tp4_nodes -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes
+[2.400s] -- The C compiler identification is GNU 13.3.0
+[3.218s] -- The CXX compiler identification is GNU 13.3.0
+[3.654s] -- Detecting C compiler ABI info
+[7.833s] -- Detecting C compiler ABI info - done
+[7.979s] -- Check for working C compiler: /usr/bin/cc - skipped
+[7.983s] -- Detecting C compile features
+[7.989s] -- Detecting C compile features - done
+[8.250s] -- Detecting CXX compiler ABI info
+[11.738s] -- Detecting CXX compiler ABI info - done
+[11.929s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[11.932s] -- Detecting CXX compile features
+[11.937s] -- Detecting CXX compile features - done
+[12.604s] -- Found rclpy: 7.1.5 (/opt/ros/jazzy/share/rclpy/cmake)
+[13.183s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[27.257s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[28.772s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[44.157s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[46.075s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[48.228s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[50.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[52.777s] -- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[61.348s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[62.008s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[67.959s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[68.543s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[68.842s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[78.937s] -- Configuring done (77.9s)
+[79.694s] -- Generating done (0.6s)
+[80.117s] -- Build files have been written to: /home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes
+[80.133s] Invoked command in '/home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/wdir/install/tp3_nodes:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/wdir/tp4/tp4_nodes -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes
+[80.154s] Invoking command in '/home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/wdir/install/tp3_nodes:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes -- -j12 -l12
+[81.957s] Invoked command in '/home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/wdir/install/tp3_nodes:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes -- -j12 -l12
+[82.283s] Invoking command in '/home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/wdir/install/tp3_nodes:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes
+[82.583s] -- Install configuration: ""
+[82.609s] -- Execute custom install script
+[82.693s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/lib/tp4_nodes/world_tf_broadcaster.py
+[83.175s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/launch/teleop_launch.py
+[83.621s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/rviz/world.rviz
+[84.184s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/src/tp4_mapping.py
+[84.563s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/src/world_tf_broadcaster.py
+[84.988s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/lib/tp4_nodes/tp4_mapping.py
+[85.415s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/ament_index/resource_index/package_run_dependencies/tp4_nodes
+[85.940s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/ament_index/resource_index/parent_prefix_path/tp4_nodes
+[86.371s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/environment/ament_prefix_path.sh
+[86.728s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/environment/ament_prefix_path.dsv
+[87.129s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/environment/path.sh
+[87.468s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/environment/path.dsv
+[87.802s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/local_setup.bash
+[88.118s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/local_setup.sh
+[88.442s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/local_setup.zsh
+[88.814s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/local_setup.dsv
+[89.366s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/package.dsv
+[89.798s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/ament_index/resource_index/packages/tp4_nodes
+[90.197s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/cmake/tp4_nodesConfig.cmake
+[90.544s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/cmake/tp4_nodesConfig-version.cmake
+[90.967s] -- Symlinking: /home/ubuntu/wdir/tp4/tp4_nodes/install/tp4_nodes/share/tp4_nodes/package.xml
+[91.252s] Invoked command in '/home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/wdir/install/tp3_nodes:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/wdir/tp4/tp4_nodes/build/tp4_nodes

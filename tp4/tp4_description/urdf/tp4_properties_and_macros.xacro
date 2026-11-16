@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+<!-- This file contains macro and properties to ease the robot's description xacro file-->
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="properties">
+    <!-- properties of the robot (size and mass of the different parts) -->
+    <xacro:property name="body_radius" value="0.038" />
+    <xacro:property name="body_height" value="0.09" />
+    <xacro:property name="body_mass" value="0.0262" />
+
+    <xacro:property name="wheel_radius" value="0.02" />
+    <xacro:property name="wheel_length" value="0.0085" />
+    <xacro:property name="wheel_mass" value="0.0044794" />
+    <xacro:property name="wheel_offset" value="0.01375" />
+
+    <xacro:property name="caster_wheel_radius" value="0.006" />
+
+    <xacro:property name="lidar_radius" value="0.07" />
+    <xacro:property name="lidar_length" value="0.07" />
+    <xacro:property name="lidar_mass" value="0.5" />
+
+
+    <!-- colors definition for rviz display -->
+    <material name="blue">
+        <color rgba="0.1 0.1 0.7 1.0"/>
+    </material>
+    <material name="red">
+        <color rgba="0.7 0.1 0.1 1.0"/>
+    </material>
+    <material name="green">
+        <color rgba="0.1 0.7 0.1 1.0"/>
+    </material>
+    <material name="yellow">
+        <color rgba="0.7 0.7 0.1 1.0"/>
+    </material>
+    <material name="magenta">
+        <color rgba="0.7 0.1 0.7 1.0"/>
+    </material>
+    <material name="cyan">
+        <color rgba="0.1 0.7 0.7 1.0"/>
+    </material>
+    <material name="white">
+        <color rgba="0.8 0.8 0.8 1.0"/>
+    </material>
+
+
+    <!-- macro to use when the visual shape and the collision shapes are the same (to avoid writing it twice) -->
+    <xacro:macro name="visual_collision" params="name material *shape">
+        <visual name="${name}_visual">
+            <geometry>
+                <xacro:insert_block name="shape" />
+            </geometry>
+            <material name="${material}"/>
+        </visual>
+        <collision name="${name}_collision">
+            <geometry>
+                <xacro:insert_block name="shape" />
+            </geometry>
+        </collision>
+    </xacro:macro>
+    
+
+    <!-- macros to compute the inertia of several basic shapes -->
+
+    <xacro:macro name="box_inertia" params="mass x y z">
+        <inertial>
+            <!--https://www.wolframalpha.com/input?i=inertia+matrix+box-->
+            <mass value="${mass}"/>
+            <inertia ixx="${(1.0/12.0)*(y*y+z*z)*mass}" ixy="0" ixz="0" 
+                     iyy="${(1.0/12.0)*(x*x+z*z)*mass}" iyz="0" 
+                     izz="${(1.0/12.0)*(x*x+y*y)*mass}"/>
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="cylinder_inertia" params="mass radius height">
+        <inertial>
+            <!--https://www.wolframalpha.com/input/?i=inertia+matrix+cylinder&rawformassumption=%7B%22C%22,+%22cylinder%22%7D+-%3E+%7B%22Solid%22%7D-->
+            <mass value="${mass}"/>
+            <inertia ixx="${(1.0/12.0)*(3.0*radius*radius+4.0*height*height)*mass}" ixy="0" ixz="0" 
+                     iyy="${(1.0/12.0)*(3.0*radius*radius+4.0*height*height)*mass}" iyz="0" 
+                     izz="${(1.0/2.0)*radius*radius*mass}"/>
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="sphere_inertia" params="mass radius">
+        <inertial>
+            <!--https://www.wolframalpha.com/input/?i=inertia+matrix+sphere-->
+            <mass value="${mass}"/>
+            <inertia ixx="${(2.0 / 5.0)*radius*radius*mass}" ixy="0" ixz="0" 
+                     iyy="${(2.0 / 5.0)*radius*radius*mass}" iyz="0" 
+                     izz="${(2.0 / 5.0)*radius*radius*mass}"/>
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="zero_inertia">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0" />
+            <inertia
+                ixx="0" ixy="0" ixz="0"
+                iyy="0" iyz="0"
+                izz="0" />
+        </inertial>
+    </xacro:macro>
+</robot>

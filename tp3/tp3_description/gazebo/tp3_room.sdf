@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <model name="tp3_room">
+    <static>true</static>
+    <link name="east_0">
+      <pose>5.00000 -3.00000 1.00000 0 0 0.000000000</pose>
+      <visual name="east_0_visual">
+        <geometry>
+          <box>
+            <size>0.5 4.00000 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0.8 0.8 1</ambient>
+          <diffuse>0 0.8 0.8 1</diffuse>
+        </material>
+      </visual>
+      <collision name="east_0_collision">
+        <geometry>
+          <box>
+            <size>0.5 4.00000 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="east_1">
+      <pose>5.00000 3.00000 1.00000 0 0 0.000000000</pose>
+      <visual name="east_1_visual">
+        <geometry>
+          <box>
+            <size>0.5 4.00000 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0.8 0.8 1</ambient>
+          <diffuse>0 0.8 0.8 1</diffuse>
+        </material>
+      </visual>
+      <collision name="east_1_collision">
+        <geometry>
+          <box>
+            <size>0.5 4.00000 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="north_0">
+      <pose>0.00000 5.00000 1.00000 0 0 1.570796327</pose>
+      <visual name="north_0_visual">
+        <geometry>
+          <box>
+            <size>0.5 10.00000 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0.8 0.8 1</ambient>
+          <diffuse>0 0.8 0.8 1</diffuse>
+        </material>
+      </visual>
+      <collision name="north_0_collision">
+        <geometry>
+          <box>
+            <size>0.5 10.00000 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="west_0">
+      <pose>-5.00000 0.00000 1.00000 0 0 0.000000000</pose>
+      <visual name="west_0_visual">
+        <geometry>
+          <box>
+            <size>0.5 10.00000 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0.8 0.8 1</ambient>
+          <diffuse>0 0.8 0.8 1</diffuse>
+        </material>
+      </visual>
+      <collision name="west_0_collision">
+        <geometry>
+          <box>
+            <size>0.5 10.00000 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="south_0">
+      <pose>0.00000 -5.00000 1.00000 0 0 1.570796327</pose>
+      <visual name="south_0_visual">
+        <geometry>
+          <box>
+            <size>0.5 10.00000 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0.8 0.8 1</ambient>
+          <diffuse>0 0.8 0.8 1</diffuse>
+        </material>
+      </visual>
+      <collision name="south_0_collision">
+        <geometry>
+          <box>
+            <size>0.5 10.00000 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

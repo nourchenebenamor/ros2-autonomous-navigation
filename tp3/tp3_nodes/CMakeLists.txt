@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.8)
+project(tp3_nodes)
+find_package(ament_cmake REQUIRED)
+install(PROGRAMS scripts/escape_room.py DESTINATION lib/${PROJECT_NAME} RENAME escape_room)
+install(FILES scripts/escape_geometry.py DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+ament_package()
